@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import {Header, Pizza} from "./components";
+import {Footer, Header, Pizza} from "./components";
 import { pizzas } from "./mocks/pizzas";
 const App = () => {
 
@@ -12,6 +12,7 @@ const App = () => {
     return <>
         <Header></Header>
         <>{pizzaItems}</>
+        <Footer></Footer>
     </>
 }
 const rootElement = ReactDOM.createRoot(document.getElementById('root'));

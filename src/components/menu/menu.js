@@ -4,7 +4,14 @@ import { Pizza } from "../pizza/pizza";
 
 const Menu = () => {
     const pizzaItems = pizzas.map((pizza, key) =>{
-        return <Pizza key={key} img_url={pizza.photoName} name={pizza.name} ingredients={pizza.ingredients} ></Pizza> 
+        return <Pizza 
+        key={key} 
+        img_url={pizza.photoName} 
+        name={pizza.name} 
+        ingredients={pizza.ingredients} 
+        price={pizza.price}>
+            
+        </Pizza> 
     })
 
 

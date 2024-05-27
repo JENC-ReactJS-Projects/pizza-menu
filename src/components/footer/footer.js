@@ -4,7 +4,7 @@ const Footer = (props) => {
     const closedHour = 22;
     const isOpen = hour >= openHour && hour <= closedHour;
     console.log(isOpen);
-    return <footer>{new Date().toLocaleTimeString()}We are open!</footer>
+    return <footer className="footer">{new Date().toLocaleTimeString()}We are open!</footer>
 };
 
 export {Footer};

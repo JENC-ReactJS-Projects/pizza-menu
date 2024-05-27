@@ -2,7 +2,7 @@ const Pizza = (props) => {
     return (
     <div>
         <img src={props.img_url} alt="Pizza"/>
-        <h2>{props.name}</h2>
+        <h3>{props.name}</h3>
         <p>{props.ingredients}</p>
     </div>
     ); 

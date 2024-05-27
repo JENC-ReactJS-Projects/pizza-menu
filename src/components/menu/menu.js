@@ -10,14 +10,16 @@ const Menu = () => {
         name={pizza.name} 
         ingredients={pizza.ingredients} 
         price={pizza.price}>
-            
+
         </Pizza> 
     })
 
 
     return   <main className="menu">
         <h2>Our Menu</h2>
-        {pizzaItems}
+        <ul className="pizzas">
+            {pizzaItems}
+        </ul>
         </main>
 };
 

@@ -1,19 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import './index.css';
 
-import {Footer, Header, Pizza} from "./components";
-import { pizzas } from "./mocks/pizzas";
+import { Footer, Header } from "./components";
+import { Menu } from "./components/menu/menu";
 const App = () => {
 
-    const pizzaItems = pizzas.map((pizza, key) =>{
-        return <Pizza key={key} img_url={pizza.photoName} name={pizza.name} ingredients={pizza.ingredients} ></Pizza> 
-    })
-
-    return <>
+    return <div className='container'>
         <Header></Header>
-        <>{pizzaItems}</>
+        <Menu></Menu>
         <Footer></Footer>
-    </>
+    </div>
 }
 const rootElement = ReactDOM.createRoot(document.getElementById('root'));
 rootElement.render(

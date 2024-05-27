@@ -1,5 +1,10 @@
 const Footer = (props) => {
-    return <footer>We are open!</footer>
+    const hour = new Date().getHours();
+    const openHour = 12;
+    const closedHour = 22;
+    const isOpen = hour >= openHour && hour <= closedHour;
+    console.log(isOpen);
+    return <footer>{new Date().toLocaleTimeString()}We are open!</footer>
 };
 
 export {Footer};
